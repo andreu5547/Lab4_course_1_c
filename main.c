@@ -43,6 +43,11 @@ void input_cvector(CVector* ve){
     ve->size++;
 }
 
+void free_CV(CVector* ve) {
+    free(ve->values);
+    free(ve);
+}
+
 int main() {
     // num 1
     CVector* cv;
@@ -63,6 +68,8 @@ int main() {
     result = hex_to_int(cv->values);
     result = num_even_or_uneven_bits(result, 1);
     printf("%d", result);
+
+    free_CV(cv);
 
     return 0;
 }

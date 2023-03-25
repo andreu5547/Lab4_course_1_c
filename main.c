@@ -33,12 +33,14 @@ void input_cvector(CVector* ve){
             ve->values = realloc(ve->values, ve->capacity * sizeof(char));
         }
         ve->values[i++] = c;
+        ve->size++;
     }
     if (ve->capacity - ve->size == 0) {
         ve->capacity = ve->capacity * COEFF;
         ve->values = realloc(ve->values, ve->capacity * sizeof(char));
     }
     ve->values[i] = '\0';
+    ve->size++;
 }
 
 int main() {

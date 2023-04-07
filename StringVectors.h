@@ -2,8 +2,8 @@
 // Created by 1 on 25.03.2023.
 //
 
-#ifndef LAB5_STRINGVECTORS_H
-#define LAB5_STRINGVECTORS_H
+#ifndef STRINGVECTORS_H
+#define STRINGVECTORS_H
 
 typedef struct CVector CVector;
 
@@ -19,4 +19,4 @@ char *give_string(CVector *ve);
 
 int find_pos_first_sym_ve1_in_ve2(CVector *ve1, CVector *ve2);
 
-#endif //LAB5_STRINGVECTORS_H
+#endif //STRINGVECTORS_H
